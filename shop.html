@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — The Vintage Store</title>
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<div class="announcement-bar">
+  <div class="announcement-bar__track">
+    <span class="announcement-bar__item">Free Shipping on orders above ₹999</span>
+    <span class="announcement-bar__item">New Drop: Star Patch Denims</span>
+    <span class="announcement-bar__item">COD Available Across India</span>
+    <span class="announcement-bar__item">Easy 7-Day Returns</span>
+    <span class="announcement-bar__item">Free Shipping on orders above ₹999</span>
+    <span class="announcement-bar__item">New Drop: Star Patch Denims</span>
+    <span class="announcement-bar__item">COD Available Across India</span>
+    <span class="announcement-bar__item">Easy 7-Day Returns</span>
+  </div>
+</div>
+
+<div class="overlay"></div>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/images/logo.jpg" alt="The Vintage Store">
+      </a>
+      <ul class="navbar__nav">
+        <li><a href="index.html" class="navbar__nav-link">Home</a></li>
+        <li class="navbar__dropdown">
+          <a href="shop.html" class="navbar__nav-link active">Shop</a>
+          <div class="navbar__dropdown-menu">
+            <a href="shop.html?category=denims" class="dropdown-card">
+              <img src="assets/images/products/product1.jpg" alt="Denims">
+              <div class="dropdown-card__label">Denims</div>
+            </a>
+            <a href="shop.html?category=tops" class="dropdown-card">
+              <img src="assets/images/products/product4.jpg" alt="Tops">
+              <div class="dropdown-card__label">Tops</div>
+            </a>
+            <a href="shop.html" class="dropdown-card">
+              <img src="assets/images/products/product2.jpg" alt="All">
+              <div class="dropdown-card__label">All Products</div>
+            </a>
+          </div>
+        </li>
+        <li><a href="shop.html" class="navbar__nav-link">New Arrivals</a></li>
+        <li><a href="policy.html" class="navbar__nav-link">Policies</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <a href="login.html" class="navbar__action-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+        <a href="cart.html" class="navbar__action-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" style="display:none">0</span>
+        </a>
+        <button class="navbar__hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="navbar__mobile">
+  <a href="index.html" class="mobile-nav__link">Home</a>
+  <a href="shop.html" class="mobile-nav__link">Shop</a>
+  <a href="cart.html" class="mobile-nav__link">Cart</a>
+  <a href="login.html" class="mobile-nav__link">Account</a>
+</div>
+
+<!-- Shop Header -->
+<div class="shop-header">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb__sep">›</span>
+      <span class="breadcrumb__current">Shop</span>
+    </div>
+    <h1 class="shop-header__title">All Products</h1>
+    <div class="shop-header__count" id="product-count">Loading...</div>
+  </div>
+</div>
+
+<!-- Category Filter Bar -->
+<div style="background:var(--color-bg-2); border-bottom:1px solid var(--color-border); padding:0;">
+  <div class="container">
+    <div style="display:flex; gap:0; overflow-x:auto; scrollbar-width:none;">
+      <button class="navbar__nav-link active" data-category-filter="all" style="padding:16px 20px; border-bottom:2px solid var(--color-accent); color:var(--color-text); white-space:nowrap;">All</button>
+      <button class="navbar__nav-link" data-category-filter="denims" style="padding:16px 20px; border-bottom:2px solid transparent; white-space:nowrap;">Denims</button>
+      <button class="navbar__nav-link" data-category-filter="tops" style="padding:16px 20px; border-bottom:2px solid transparent; white-space:nowrap;">Tops</button>
+    </div>
+  </div>
+</div>
+
+<!-- Shop Layout -->
+<div class="container">
+  <div class="shop-layout">
+
+    <!-- Sidebar Filters -->
+    <aside class="filter-sidebar">
+      <div class="filter-group">
+        <div class="filter-group__title">Price Range</div>
+        <div class="filter-options">
+          <label class="filter-option">
+            <input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">Under ₹999</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">₹999 – ₹1,299</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">₹1,300 – ₹1,599</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">Above ₹1,600</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-group__title">Size</div>
+        <div class="filter-options" style="flex-direction:row; flex-wrap:wrap; gap:6px;">
+          <label style="cursor:pointer"><input type="checkbox" class="filter-checkbox" style="display:none"><span class="size-btn">28</span></label>
+          <label style="cursor:pointer"><input type="checkbox" class="filter-checkbox" style="display:none"><span class="size-btn">30</span></label>
+          <label style="cursor:pointer"><input type="checkbox" class="filter-checkbox" style="display:none"><span class="size-btn">32</span></label>
+          <label style="cursor:pointer"><input type="checkbox" class="filter-checkbox" style="display:none"><span class="size-btn">34</span></label>
+          <label style="cursor:pointer"><input type="checkbox" class="filter-checkbox" style="display:none"><span class="size-btn">S</span></label>
+          <label style="cursor:pointer"><input type="checkbox" class="filter-checkbox" style="display:none"><span class="size-btn">M</span></label>
+          <label style="cursor:pointer"><input type="checkbox" class="filter-checkbox" style="display:none"><span class="size-btn">L</span></label>
+          <label style="cursor:pointer"><input type="checkbox" class="filter-checkbox" style="display:none"><span class="size-btn">XL</span></label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-group__title">Category</div>
+        <div class="filter-options">
+          <label class="filter-option">
+            <input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">Denims</span> <span class="filter-option-count">4</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">Tops</span> <span class="filter-option-count">1</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-group__title">Tags</div>
+        <div class="filter-options">
+          <label class="filter-option">
+            <input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">New Arrivals</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">On Sale</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">Trending</span>
+          </label>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Product Grid -->
+    <div>
+      <div class="shop-toolbar">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <button onclick="TVS.toggleFilter()" class="btn btn--outline btn--sm" style="display:none;" id="filter-toggle">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+            Filters
+          </button>
+        </div>
+        <div class="shop-toolbar__sort">
+          <span class="shop-toolbar__label">Sort by</span>
+          <select class="shop-toolbar__select">
+            <option value="default">Featured</option>
+            <option value="newest">Newest</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating">Best Rating</option>
+          </select>
+        </div>
+        <div class="view-toggle">
+          <button class="view-btn active" data-view="grid" title="Grid view">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          </button>
+          <button class="view-btn" data-view="list" title="List view">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="products-grid" data-grid="shop">
+        <!-- Loaded by api.js -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <img src="assets/images/logo.jpg" alt="The Vintage Store" class="footer__brand-logo">
+        <p class="footer__brand-desc">Premium Indian streetwear. Wide-leg, heavyweight, unapologetic.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__heading">Shop</div>
+        <ul class="footer__links">
+          <li><a href="shop.html?category=denims" class="footer__link">Denims</a></li>
+          <li><a href="shop.html?category=tops" class="footer__link">Tops</a></li>
+          <li><a href="shop.html" class="footer__link">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__heading">Help</div>
+        <ul class="footer__links">
+          <li><a href="policy.html#shipping" class="footer__link">Shipping Info</a></li>
+          <li><a href="policy.html#returns" class="footer__link">Returns</a></li>
+          <li><a href="policy.html#sizing" class="footer__link">Size Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__heading">Newsletter</div>
+        <div class="footer__newsletter-form">
+          <input type="email" class="footer__newsletter-input" placeholder="your@email.com">
+          <button class="footer__newsletter-btn">Join</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copyright">© 2026 The Vintage Store. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast-container"></div>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/api.js"></script>
+<script>
+  // Update product count after load
+  window.addEventListener('DOMContentLoaded', async () => {
+    const products = await API.getProducts();
+    const countEl = document.getElementById('product-count');
+    if (countEl) countEl.textContent = `${products.length} Products`;
+  });
+</script>
+</body>
+</html>

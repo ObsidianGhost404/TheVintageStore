@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Policies — The Vintage Store</title>
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo"><img src="assets/images/logo.jpg" alt="The Vintage Store"></a>
+      <ul class="navbar__nav">
+        <li><a href="index.html" class="navbar__nav-link">Home</a></li>
+        <li><a href="shop.html" class="navbar__nav-link">Shop</a></li>
+        <li><a href="policy.html" class="navbar__nav-link active">Policies</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <a href="cart.html" class="navbar__action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="cart-count" style="display:none">0</span></a>
+        <button class="navbar__hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="navbar__mobile">
+  <a href="index.html" class="mobile-nav__link">Home</a>
+  <a href="shop.html" class="mobile-nav__link">Shop</a>
+  <a href="cart.html" class="mobile-nav__link">Cart</a>
+</div>
+
+<div style="background:var(--color-bg-2);border-bottom:1px solid var(--color-border);padding:48px 0 32px;">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb__sep">›</span><span class="breadcrumb__current">Policies</span></div>
+    <h1 style="font-family:var(--font-display);font-size:clamp(2.5rem,6vw,5rem);font-weight:900;text-transform:uppercase;line-height:0.95;">Store<br>Policies</h1>
+    <p style="margin-top:16px;max-width:500px;">Everything you need to know about ordering, shipping, returns, and your rights as a customer.</p>
+  </div>
+</div>
+
+<main class="policy-page">
+  <div class="container">
+    <div class="policy-layout">
+      <!-- Side Nav -->
+      <nav class="policy-nav">
+        <a href="#shipping" class="policy-nav__link active">Shipping</a>
+        <a href="#returns" class="policy-nav__link">Returns</a>
+        <a href="#sizing" class="policy-nav__link">Size Guide</a>
+        <a href="#privacy" class="policy-nav__link">Privacy Policy</a>
+        <a href="#terms" class="policy-nav__link">Terms of Service</a>
+        <a href="#refund" class="policy-nav__link">Refund Policy</a>
+        <a href="#contact" class="policy-nav__link">Contact Us</a>
+      </nav>
+
+      <!-- Policy Content -->
+      <div class="policy-content">
+
+        <section id="shipping">
+          <h2>Shipping Policy</h2>
+          <p>We ship across India with standard and express options. Orders are processed within 1–2 business days of payment confirmation.</p>
+          <h3>Delivery Timeframes</h3>
+          <ul>
+            <li>Metro cities (Mumbai, Delhi, Bangalore, Chennai): 2–3 business days</li>
+            <li>Tier 2 cities: 3–5 business days</li>
+            <li>Remote areas: 5–7 business days</li>
+          </ul>
+          <h3>Shipping Charges</h3>
+          <ul>
+            <li>Orders above ₹999 — FREE shipping</li>
+            <li>Orders below ₹999 — ₹99 flat shipping fee</li>
+            <li>COD orders — additional ₹30 handling charge</li>
+          </ul>
+          <h3>Tracking Your Order</h3>
+          <p>Once your order is dispatched, you will receive a WhatsApp message and email with your tracking number. You can track your order on the courier partner's website.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="returns">
+          <h2>Returns & Exchanges</h2>
+          <p>We want you to love what you ordered. If something isn't right, we'll make it right.</p>
+          <h3>Return Eligibility</h3>
+          <ul>
+            <li>Items must be returned within 7 days of delivery</li>
+            <li>Products must be unworn, unwashed, and in original condition</li>
+            <li>Original tags and packaging must be intact</li>
+            <li>Sale items are not eligible for return unless defective</li>
+          </ul>
+          <h3>How to Initiate a Return</h3>
+          <p>Contact us on WhatsApp at +91-XXXXXXXXXX or email us at support@thevintagestore.in with your order number and reason for return. We'll arrange a pickup within 2–3 business days.</p>
+          <h3>Refund Timeline</h3>
+          <p>Once we receive and inspect the returned item, refunds are processed within 5–7 business days to your original payment method. For COD orders, refunds are issued as store credit or bank transfer.</p>
+          <h3>Exchange Policy</h3>
+          <p>We offer size exchanges subject to stock availability. Contact us within 7 days of delivery to initiate an exchange request.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="sizing">
+          <h2>Size Guide</h2>
+          <p>Our denims come in waist sizes 28 to 36. All fits are ultra wide-leg — the length is designed to stack generously at the hem. If you're between sizes, size down.</p>
+          <h3>Denim Size Chart</h3>
+          <table style="width:100%;border-collapse:collapse;margin-top:16px;">
+            <thead>
+              <tr style="background:var(--color-bg-3);">
+                <th style="padding:12px 16px;text-align:left;font-family:var(--font-condensed);letter-spacing:0.12em;font-size:0.72rem;text-transform:uppercase;border-bottom:1px solid var(--color-border);">Size</th>
+                <th style="padding:12px 16px;text-align:center;font-family:var(--font-condensed);letter-spacing:0.12em;font-size:0.72rem;text-transform:uppercase;border-bottom:1px solid var(--color-border);">Waist (inches)</th>
+                <th style="padding:12px 16px;text-align:center;font-family:var(--font-condensed);letter-spacing:0.12em;font-size:0.72rem;text-transform:uppercase;border-bottom:1px solid var(--color-border);">Hip (inches)</th>
+                <th style="padding:12px 16px;text-align:center;font-family:var(--font-condensed);letter-spacing:0.12em;font-size:0.72rem;text-transform:uppercase;border-bottom:1px solid var(--color-border);">Length (inches)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--color-border);"><td style="padding:12px 16px;font-size:0.88rem;">28</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">28–29</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">36–37</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">40</td></tr>
+              <tr style="border-bottom:1px solid var(--color-border);"><td style="padding:12px 16px;font-size:0.88rem;">30</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">30–31</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">38–39</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">40</td></tr>
+              <tr style="border-bottom:1px solid var(--color-border);"><td style="padding:12px 16px;font-size:0.88rem;">32</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">32–33</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">40–41</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">41</td></tr>
+              <tr style="border-bottom:1px solid var(--color-border);"><td style="padding:12px 16px;font-size:0.88rem;">34</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">34–35</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">42–43</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">41</td></tr>
+              <tr><td style="padding:12px 16px;font-size:0.88rem;">36</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">36–37</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">44–45</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">42</td></tr>
+            </tbody>
+          </table>
+          <h3>Tops Size Chart</h3>
+          <table style="width:100%;border-collapse:collapse;margin-top:16px;">
+            <thead>
+              <tr style="background:var(--color-bg-3);">
+                <th style="padding:12px 16px;text-align:left;font-family:var(--font-condensed);letter-spacing:0.12em;font-size:0.72rem;text-transform:uppercase;border-bottom:1px solid var(--color-border);">Size</th>
+                <th style="padding:12px 16px;text-align:center;font-family:var(--font-condensed);letter-spacing:0.12em;font-size:0.72rem;text-transform:uppercase;border-bottom:1px solid var(--color-border);">Chest (inches)</th>
+                <th style="padding:12px 16px;text-align:center;font-family:var(--font-condensed);letter-spacing:0.12em;font-size:0.72rem;text-transform:uppercase;border-bottom:1px solid var(--color-border);">Length (inches)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--color-border);"><td style="padding:12px 16px;font-size:0.88rem;">S</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">38–40</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">27</td></tr>
+              <tr style="border-bottom:1px solid var(--color-border);"><td style="padding:12px 16px;font-size:0.88rem;">M</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">40–42</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">28</td></tr>
+              <tr style="border-bottom:1px solid var(--color-border);"><td style="padding:12px 16px;font-size:0.88rem;">L</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">42–44</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">29</td></tr>
+              <tr style="border-bottom:1px solid var(--color-border);"><td style="padding:12px 16px;font-size:0.88rem;">XL</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">44–46</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">30</td></tr>
+              <tr><td style="padding:12px 16px;font-size:0.88rem;">XXL</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">46–48</td><td style="padding:12px 16px;text-align:center;font-size:0.88rem;color:var(--color-text-2);">31</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <hr class="divider">
+
+        <section id="privacy">
+          <h2>Privacy Policy</h2>
+          <p>Your privacy is important to us. This policy explains how The Vintage Store collects, uses, and protects your personal information.</p>
+          <h3>Information We Collect</h3>
+          <ul>
+            <li>Name, email address, and phone number when you place an order or create an account</li>
+            <li>Shipping address for order fulfillment</li>
+            <li>Payment information (processed securely — we do not store card details)</li>
+            <li>Browser and device data for improving the website experience</li>
+          </ul>
+          <h3>How We Use Your Data</h3>
+          <ul>
+            <li>To process and fulfill your orders</li>
+            <li>To send order confirmations and shipping updates via WhatsApp/email</li>
+            <li>To send promotional messages (you may opt out at any time)</li>
+            <li>To improve our website and product offerings</li>
+          </ul>
+          <h3>Data Security</h3>
+          <p>We implement industry-standard security measures to protect your personal information. Payment processing is handled by certified payment gateways and we never store sensitive financial data on our servers.</p>
+          <h3>Third-Party Services</h3>
+          <p>We use trusted third-party services for shipping (Shiprocket/Delhivery), payments (Razorpay), and analytics. These services have their own privacy policies.</p>
+          <h3>Your Rights</h3>
+          <p>You have the right to access, correct, or delete your personal data. Contact us at privacy@thevintagestore.in for any privacy-related requests.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="terms">
+          <h2>Terms of Service</h2>
+          <p>By using The Vintage Store website and placing orders, you agree to the following terms and conditions.</p>
+          <h3>Use of Website</h3>
+          <ul>
+            <li>You must be 18 years or older to make a purchase</li>
+            <li>You agree not to misuse this website or attempt to access it through unauthorized means</li>
+            <li>Product descriptions and images are as accurate as possible; slight color variations may occur due to screen settings</li>
+          </ul>
+          <h3>Orders & Pricing</h3>
+          <ul>
+            <li>All prices are listed in Indian Rupees (₹) and are inclusive of GST</li>
+            <li>We reserve the right to modify prices at any time</li>
+            <li>An order confirmation email does not guarantee product availability; we will notify you of any out-of-stock issues</li>
+          </ul>
+          <h3>Intellectual Property</h3>
+          <p>All content on this website — including product images, logo, designs, and text — is the property of The Vintage Store and may not be reproduced without written permission.</p>
+          <h3>Limitation of Liability</h3>
+          <p>The Vintage Store shall not be liable for indirect, incidental, or consequential damages arising from the use of our products or website beyond the value of the purchased item.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="refund">
+          <h2>Refund Policy</h2>
+          <p>We offer full refunds for eligible items under the following conditions.</p>
+          <h3>Eligible for Refund</h3>
+          <ul>
+            <li>Item received is damaged, defective, or significantly different from the product listing</li>
+            <li>Incorrect item delivered (wrong size, color, or product)</li>
+            <li>Item not delivered within 15 business days of the estimated delivery date</li>
+          </ul>
+          <h3>Not Eligible for Refund</h3>
+          <ul>
+            <li>Change of mind after order is dispatched</li>
+            <li>Items that have been worn, washed, or altered</li>
+            <li>Items returned without original tags or packaging</li>
+            <li>Sale or discounted items (eligible for exchange only)</li>
+          </ul>
+          <h3>Refund Process</h3>
+          <p>Approved refunds are processed within 5–7 business days. Online payments are refunded to the original payment method. COD orders are refunded via bank transfer or store credit.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="contact">
+          <h2>Contact Us</h2>
+          <p>We're here to help. Reach out to us through any of the following channels.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:24px;">
+            <div style="background:var(--color-bg-2);border:1px solid var(--color-border);padding:24px;">
+              <div style="font-family:var(--font-condensed);font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--color-accent);margin-bottom:10px;">WhatsApp</div>
+              <div style="font-size:0.95rem;color:var(--color-text);font-weight:600;">+91 XXXXX XXXXX</div>
+              <div style="font-size:0.78rem;color:var(--color-text-muted);margin-top:4px;">Mon–Sat, 10am–7pm IST</div>
+            </div>
+            <div style="background:var(--color-bg-2);border:1px solid var(--color-border);padding:24px;">
+              <div style="font-family:var(--font-condensed);font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--color-accent);margin-bottom:10px;">Email</div>
+              <div style="font-size:0.95rem;color:var(--color-text);font-weight:600;">support@thevintagestore.in</div>
+              <div style="font-size:0.78rem;color:var(--color-text-muted);margin-top:4px;">Response within 24 hours</div>
+            </div>
+            <div style="background:var(--color-bg-2);border:1px solid var(--color-border);padding:24px;">
+              <div style="font-family:var(--font-condensed);font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--color-accent);margin-bottom:10px;">Instagram</div>
+              <div style="font-size:0.95rem;color:var(--color-text);font-weight:600;">@thevintagestore</div>
+              <div style="font-size:0.78rem;color:var(--color-text-muted);margin-top:4px;">DMs are open</div>
+            </div>
+            <div style="background:var(--color-bg-2);border:1px solid var(--color-border);padding:24px;">
+              <div style="font-family:var(--font-condensed);font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--color-accent);margin-bottom:10px;">Based In</div>
+              <div style="font-size:0.95rem;color:var(--color-text);font-weight:600;">India 🇮🇳</div>
+              <div style="font-size:0.78rem;color:var(--color-text-muted);margin-top:4px;">Shipping Nationwide</div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__bottom">
+      <div class="footer__copyright">© 2026 The Vintage Store. All rights reserved.</div>
+      <div class="footer__bottom-links">
+        <a href="policy.html#privacy" class="footer__bottom-link">Privacy</a>
+        <a href="policy.html#terms" class="footer__bottom-link">Terms</a>
+        <a href="policy.html#refund" class="footer__bottom-link">Refunds</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast-container"></div>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/cart.js"></script>
+</body>
+</html>

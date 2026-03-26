@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — The Vintage Store</title>
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo"><img src="assets/images/logo.jpg" alt="The Vintage Store"></a>
+      <a href="shop.html" class="btn btn--ghost" style="font-size:0.75rem;">Continue Shopping →</a>
+    </div>
+  </div>
+</nav>
+
+<main class="auth-page">
+  <div class="auth-card animate-fade-up">
+    <div class="auth-logo">
+      <img src="assets/images/logo.jpg" alt="The Vintage Store">
+    </div>
+
+    <div class="auth-tabs">
+      <button class="auth-tab active" data-tab="login">Sign In</button>
+      <button class="auth-tab" data-tab="register">Create Account</button>
+    </div>
+
+    <!-- Login Form -->
+    <div class="auth-form-panel" data-panel="login" style="display:flex;flex-direction:column;gap:16px;">
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-input" placeholder="you@email.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label" style="display:flex;justify-content:space-between;">
+          Password
+          <a href="#" style="color:var(--color-accent);font-size:0.68rem;text-decoration:underline;font-weight:400;">Forgot password?</a>
+        </label>
+        <input type="password" class="form-input" placeholder="••••••••">
+      </div>
+      <button class="btn btn--primary btn--full" onclick="TVS.showToast('Signed In', 'Welcome back!')">Sign In</button>
+
+      <div class="auth-divider">
+        <div class="auth-divider-line"></div>
+        <div class="auth-divider-text">or</div>
+        <div class="auth-divider-line"></div>
+      </div>
+
+      <a href="shop.html" class="btn btn--outline btn--full">Browse as Guest</a>
+    </div>
+
+    <!-- Register Form -->
+    <div class="auth-form-panel" data-panel="register" style="display:none;flex-direction:column;gap:16px;">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">First Name</label>
+          <input type="text" class="form-input" placeholder="Arjun">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Last Name</label>
+          <input type="text" class="form-input" placeholder="Sharma">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-input" placeholder="you@email.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Phone Number</label>
+        <input type="tel" class="form-input" placeholder="+91 98765 43210">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-input" placeholder="Min. 8 characters">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Confirm Password</label>
+        <input type="password" class="form-input" placeholder="Repeat password">
+      </div>
+      <button class="btn btn--primary btn--full" onclick="TVS.showToast('Account Created', 'Welcome to The Vintage Store!')">Create Account</button>
+      <p style="font-size:0.75rem;color:var(--color-text-muted);text-align:center;">
+        By creating an account, you agree to our <a href="policy.html#terms" style="color:var(--color-accent);">Terms</a> and <a href="policy.html#privacy" style="color:var(--color-accent);">Privacy Policy</a>.
+      </p>
+    </div>
+  </div>
+</main>
+
+<div class="toast-container"></div>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/cart.js"></script>
+</body>
+</html>
